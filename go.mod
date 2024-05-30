@@ -1,4 +1,4 @@
-module go.nathanmartins.sh/go-nathanmartins-dev
+module go.nathanmartins.sh/go-nathanmartins0sh
 
 go 1.21.6
 

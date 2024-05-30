@@ -1,6 +1,18 @@
 [
   {
     "owner": "nathanmartins",
+    "name": "go.nathanmartins.sh",
+    "stars": 0,
+    "desc": "",
+    "go_package": "go-nathanmartins0sh",
+    "latest_tag": "",
+    "alpha_release": false,
+    "has_cli_app": false,
+    "packages": null,
+    "master_branch": "master"
+  },
+  {
+    "owner": "nathanmartins",
     "name": "k8s-yaml-splitter",
     "stars": 1,
     "desc": "",
