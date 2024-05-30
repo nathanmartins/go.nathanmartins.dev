@@ -9,7 +9,7 @@ export default function OpengraphPage() {
           <img src="/assets/pp.jpeg" width={100} height={100} className="rounded-full" />
           <Separator orientation="vertical" className="mx-5 bg-gray-600 h-20" />
           <div>
-            <div className="text-4xl">go.nathanmartins.dev</div>
+            <div className="text-4xl">go.nathanmartins.sh</div>
             <Separator className="mt-4 mb-2 bg-gray-600" />
             <div className="text-lg text-muted-foreground">nathanmartins's Go Package Index</div>
           </div>

@@ -4,6 +4,6 @@ export default function robots() {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://go.nathanmartins.dev/sitemap.xml',
+        sitemap: 'https://go.nathanmartins.sh/sitemap.xml',
     }
 }

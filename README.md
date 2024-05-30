@@ -1,6 +1,6 @@
-# go.nathanmartins.dev
+# go.nathanmartins.sh
 
-go.nathanmartins.dev is my personal Go package index, for Go packages with name `go.nathanmartins.dev/...`.
+go.nathanmartins.sh is my personal Go package index, for Go packages with name `go.nathanmartins.sh/...`.
 
 This repo provides the source code for the frontend and the backend of the package index.
 
@@ -19,7 +19,7 @@ This project is licensed under the terms of the GNU General Public License v3.0.
 ```sh
 export GITHUB_PUBLIC_REPO_READ_TOKEN="your-github-personal-access-token"
 
-go run cmd/sync-github-repos/main.go --usernamenathanmartinssz --hostname go.nathanmartins.dev --out ui/src/repos.json
+go run cmd/sync-github-repos/main.go --usernamenathanmartinssz --hostname go.nathanmartins.sh --out ui/src/repos.json
 ```
 
 ### Running the frontend
@@ -33,7 +33,7 @@ npm run dev
 
 ### How to add a new package/update package info after new release?
 
-The `sync-github-repos` command will collect the packages from the **public** GitHub repositories of the user, which have a `go.mod` file that starts with `module go.nathanmartins.dev/`, and write them to a JSON file. The frontend will read this JSON file and display the packages.
+The `sync-github-repos` command will collect the packages from the **public** GitHub repositories of the user, which have a `go.mod` file that starts with `module go.nathanmartins.sh/`, and write them to a JSON file. The frontend will read this JSON file and display the packages.
 
 To update the information on the website, you need to rebuild the compiled JSON file. As this project is using Vercel, you only need to commit the new JSON file to the `main` branch.
 
@@ -45,9 +45,9 @@ git commit --allow-empty -m "release"
 
 After Vercel finishes the new deployment, the website will be updated with the new information.
 
-Now you will need to update the latest version information on `pkg.go.dev`. You can do this by requesting the new version in the website by navigating to `https://pkg.go.dev/go.nathanmartins.dev/<package>@<version>`.
+Now you will need to update the latest version information on `pkg.go.dev`. You can do this by requesting the new version in the website by navigating to `https://pkg.go.dev/go.nathanmartins.sh/<package>@<version>`.
 
-> One other way to update the information on `pkg.go.dev` is to run `go get` with Go proxy specified, for example: `GOPROXY=https://proxy.golang.org GO111MODULE=on go get go.nathanmartins.dev/gls@v1.4.2`. This did not work for me all the time though.
+> One other way to update the information on `pkg.go.dev` is to run `go get` with Go proxy specified, for example: `GOPROXY=https://proxy.golang.org GO111MODULE=on go get go.nathanmartins.sh/gls@v1.4.2`. This did not work for me all the time though.
 
 #### Important points
 
@@ -60,7 +60,7 @@ Now you will need to update the latest version information on `pkg.go.dev`. You 
 
 set -eo pipefail
 
-go run cmd/sync-github-repos/main.go --usernamenathanmartinssz --hostname go.nathanmartins.dev --out ui/src/repos.json --force-authenticated
+go run cmd/sync-github-repos/main.go --usernamenathanmartinssz --hostname go.nathanmartins.sh --out ui/src/repos.json --force-authenticated
 if [ $? -ne 0 ]; then
     echo "Pre-commit hook failed (content generation script)"
     exit 1

@@ -1,7 +1,7 @@
 export default function manifest() {
     return {
-      name: 'go.nathanmartins.dev',
-      short_name: 'go.nathanmartins.dev',
+      name: 'go.nathanmartins.sh',
+      short_name: 'go.nathanmartins.sh',
       description: "nathanmartins's Go Package Index",
       start_url: '/',
       display: 'standalone',

@@ -48,7 +48,7 @@ export default function Home() {
     <div className="flex flex-col justify-between h-full w-[80%] mx-[10%]">
       <div>
         <div className="flex flex-col mx-4 mt-16 mb-12 smallscr:mx-0 smallscr:mt-8 smallscr:mb-6">
-          <h1 className="text-3xl">go.nathanmartins.dev</h1>
+          <h1 className="text-3xl">go.nathanmartins.sh</h1>
           <h2 className="text-sm mt-1 text-muted-foreground">nathanmartins's Go Package Index</h2>
         </div>
         <div className="flex flex-row flex-wrap justify-start align-center smallscr:flex-col smallscr:items-center">
@@ -70,11 +70,11 @@ export default function Home() {
                 {repo.has_cli_app && <div>
                   <Label className="text-xs">Install CLI App</Label>
                   <div className="flex flex-row items-center justify-between rounded-md border p-2 mt-2 mb-4 text-sm text-muted-foreground">
-                    <span className="overflow-auto px-2 py-2 whitespace-nowrap">{`go install go.nathanmartins.dev/${repo.go_package}/cmd/${repo.go_package}@latest`}</span>
+                    <span className="overflow-auto px-2 py-2 whitespace-nowrap">{`go install go.nathanmartins.sh/${repo.go_package}/cmd/${repo.go_package}@latest`}</span>
                     <Button
                       variant="outline" className="px-2"
                       onClick={() => {
-                        navigator.clipboard.writeText(`go install go.nathanmartins.dev/${repo.go_package}/cmd/${repo.go_package}@latest`)
+                        navigator.clipboard.writeText(`go install go.nathanmartins.sh/${repo.go_package}/cmd/${repo.go_package}@latest`)
                         toast("Copied to clipboard", {
                           description: "Run `go install` in terminal to install the " + repo.name + " CLI app."
                         })
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Link href={`https://pkg.go.dev/go.nathanmartins.dev/${repo.go_package}`} target="_blank" rel="noreferrer">
+                <Link href={`https://pkg.go.dev/go.nathanmartins.sh/${repo.go_package}`} target="_blank" rel="noreferrer">
                   <Button variant="outline">
                     <span className="mr-2 font-light text-xs">pkg.go.dev</span>
                     <ArrowUpRightIcon size={16} />
@@ -161,11 +161,11 @@ export default function Home() {
         </div>
         <Separator orientation="vertical" className="mx-5"/>
         <Link
-          href="https://github.com/nathanmartins/go.nathanmartins.dev"
+          href="https://github.com/nathanmartins/go.nathanmartins.sh"
           target="_blank" rel="noreferrer"
           className="flex flex-row align-center items-center hover:text-white hover:underline"
         >
-          <span className="mr-3">nathanmartins/go.nathanmartins.dev</span>
+          <span className="mr-3">nathanmartins/go.nathanmartins.sh</span>
           <ArrowUpRightIcon size={20} />
         </Link>
       </div>

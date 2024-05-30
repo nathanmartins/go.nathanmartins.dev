@@ -17,7 +17,7 @@ export default function RepoSlug({ params }) {
     <div className="h-full flex flex-row align-center justify-center items-center mx-5">
         <div className="text-4xl">👋</div>
         <Separator orientation="vertical" className="mx-5 bg-white h-8" />
-        <div className="text-lg font-light">Please refer to <Link className="underline-offset-4 underline" href={`https://pkg.go.dev/go.nathanmartins.dev/${slug}`} target="_blank">{`pkg.go.dev/go.nathanmartins.dev/${slug}`}</Link></div>
+        <div className="text-lg font-light">Please refer to <Link className="underline-offset-4 underline" href={`https://pkg.go.dev/go.nathanmartins.sh/${slug}`} target="_blank">{`pkg.go.dev/go.nathanmartins.sh/${slug}`}</Link></div>
     </div>
   )
 }
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }) {
 
     return {
         other: {
-            'go-import': "go.nathanmartins.dev/"+slug+" git https://github.com/"+repo.owner+"/"+repo.name,
-            'go-source': "go.nathanmartins.dev/"+slug+" https://github.com/"+repo.owner+"/"+repo.name+" https://github.com/"+repo.owner+"/"+repo.name+"/tree/"+repo.master_branch+"{/dir} https://github.com/"+repo.owner+"/"+repo.name+"/tree/"+repo.master_branch+"{/dir}/{file}#L{line}",
+            'go-import': "go.nathanmartins.sh/"+slug+" git https://github.com/"+repo.owner+"/"+repo.name,
+            'go-source': "go.nathanmartins.sh/"+slug+" https://github.com/"+repo.owner+"/"+repo.name+" https://github.com/"+repo.owner+"/"+repo.name+"/tree/"+repo.master_branch+"{/dir} https://github.com/"+repo.owner+"/"+repo.name+"/tree/"+repo.master_branch+"{/dir}/{file}#L{line}",
         }
     }
 }

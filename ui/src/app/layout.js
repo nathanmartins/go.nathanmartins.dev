@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 
 
 export const metadata = {
-  metadataBase: new URL('https://go.nathanmartins.dev'),
+  metadataBase: new URL('https://go.nathanmartins.sh'),
   title: sharedTitle,
   description: sharedLongDesc,
   robots: {
