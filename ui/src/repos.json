@@ -1,0 +1,14 @@
+[
+  {
+    "owner": "nathanmartins",
+    "name": "k8s-yaml-splitter",
+    "stars": 1,
+    "desc": "",
+    "go_package": "k8s-yaml-splitter",
+    "latest_tag": "v0.0.2",
+    "alpha_release": true,
+    "has_cli_app": false,
+    "packages": null,
+    "master_branch": "main"
+  }
+]
