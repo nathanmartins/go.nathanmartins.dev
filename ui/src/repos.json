@@ -1,6 +1,18 @@
 [
   {
     "owner": "nathanmartins",
+    "name": "k8s-yaml-splitter",
+    "stars": 1,
+    "desc": "",
+    "go_package": "k8s-yaml-splitter",
+    "latest_tag": "v0.0.2",
+    "alpha_release": true,
+    "has_cli_app": false,
+    "packages": null,
+    "master_branch": "main"
+  },
+  {
+    "owner": "nathanmartins",
     "name": "go.nathanmartins.sh",
     "stars": 0,
     "desc": "",
@@ -13,12 +25,12 @@
   },
   {
     "owner": "nathanmartins",
-    "name": "k8s-yaml-splitter",
+    "name": "k8s-yaml-extract",
     "stars": 1,
     "desc": "",
-    "go_package": "k8s-yaml-splitter",
-    "latest_tag": "v0.0.2",
-    "alpha_release": true,
+    "go_package": "k8s-yaml-extract",
+    "latest_tag": "v1.0.0",
+    "alpha_release": false,
     "has_cli_app": false,
     "packages": null,
     "master_branch": "main"
